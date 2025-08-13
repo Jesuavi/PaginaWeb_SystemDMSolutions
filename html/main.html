@@ -1,63 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SystemDm Solutions.</title>
-    <link rel="stylesheet" type="text/css" href="/css/visual.css">
+    <title>Sistema DM Solutions</title>
+    <link rel="stylesheet" type="text/css" href="/css/visualMain.css">
+    <link rel="stylesheet" type="text/css" href="/header/header.css">
 </head>    
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Titulo de la pagina</h1>
-            <img src="" alt="logo">
-            <nav>
-                <a href="nosotros">Nosotros</a>
-                <a href="Servicios">Servicios</a>
-                <a href="Contacto">Contacto</a>
-            </nav>
-        </div>
-    </header>
+    <div id="header-container"></div>
     <main >
         <div class="Imagen-principal">
-            <img src="/images/Img4.jpg" width="" height="" class="img-lista4" alt="">
+            <img src="/images/imgMain/Img4.jpg" width="" height="" class="img-lista4" alt="">
             <div class="text-overlay">
-                <h2>Texto ejemplo: titulo</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                     Sed do eiusmod tempor incididunt ut labore et dolore magna 
-                     aliqua.
+                <h2>Sistema DM Solutions</h2>
+                <p>DM Solutions es una nueva alternativa de servicios en el mercado 
+                    de la computación y las comunicaciones. La empresa se enfoca en 
+                    brindar una solución integral y competitiva a sus clientes 
+                    corporativos. Su prioridad es ofrecer los mejores productos y 
+                    servicios tecnológicos que se ajusten a las necesidades del 
+                    negocio.
                 </p>
             </div>
         </div>
                 <div class="texto-principal">
                     <div class="contenido-principal">
-                        <h2>Texto ejemplo: descripcion</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Sed do eiusmod tempor incididunt ut labore et dolore magna 
-                            aliqua.</p>
-                        <h3>Subtitulo</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Cum quis perspiciatis harum accusantium aliquid explicabo eius 
-                            exercitationem nobis eaque quibusdam maxime magni ab, 
-                            obcaecati delectus maiores hic quia laboriosam esse?
+                        <h2>SERVICIOS</h2>
+                        <p>
+                            
                         </p>
-                        <ul>
-                            <li>Elemento de lista 1</li>
-                            <li>Elemento de lista 2</li>
-                            <li>Elemento de lista 3</li>
-                        </ul>
+                        <button id="btn-mas-info">Mas informacion</button>
                     </div>
                 </div>
             <div class="slider-box">
           <ul>
             <li>
-              <img src="/images/Img1.jpg" class="img-Carrusel" alt="">
+              <img src="/images/imgMain/Img1.jpg" class="img-Carrusel" alt="">
               <div class="texto">Texto 1</div>
             </li>
             <li>
-              <img src="/images/Img2.jpg" class="img-Carrusel" alt="">
+              <img src="/images/imgMain/Img2.jpg" class="img-Carrusel" alt="">
               <div class="texto">Texto 2</div>
             </li>
             <li>
-              <img src="/images/Img3.jpg" class="img-Carrusel" alt="">
+              <img src="/images/imgMain/Img3.jpg" class="img-Carrusel" alt="">
               <div class="texto">Texto 3</div>
             </li>
           </ul>
@@ -85,15 +69,29 @@
         </div>
     </main>
     <footer>
-        <h1>Pie de pagina</h1>
-       <nav>        
-        <a href="#">inicio</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contacto</a>
-    </nav> 
+       
+        <div class="footer-flex">
+            <div class="contenido-footer">
+                 <h1>Pie de pagina</h1>
+                <ul>
+                    <li>RIF: J411836176</li>
+                    <li>Correo electrónico: contacto@sistemasdmsolutions.com</li>
+                    <li>Teléfonos: 04123051859 / 04242131178</li>
+                    <li>Ubicación: La Candelaria, Distrito Capital</li>
+                </ul>
+            </div>
 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15691
+            .811164201014!2d-66.91304683154559!3d10.504384632315576!2m3!1f0!2f0!3f0!
+            3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a592cbaaa7315%3A0x8e251652cf41fb4f
+            !2sLa%20Candelaria%2C%20Caracas%2C%20Distrito%20Capital!5e0!3m2!1ses-419!
+            2sve!4v1755119368762!5m2!1ses-419!2sve" width="400" height="300" 
+            style="border:0;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+            
     </footer>
-
+    <script src="/header/header.js"></script>
+    <script src="/logic/logicMain.js"></script>
 </body>
 </html>
