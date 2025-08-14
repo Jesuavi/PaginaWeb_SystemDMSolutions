@@ -6,8 +6,12 @@ header {
     color: white;
     box-sizing: border-box;
     box-shadow: 0 8px 24px rgba(98,5,5,0.35); /* sombra más notoria */
-    position: relative;
-    z-index: 10;
+    position: fixed;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px; /* Puedes ajustar este valor si tu header es más alto o más bajo */
 }  
 
 .header-content {
