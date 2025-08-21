@@ -5,10 +5,8 @@ body {
 }
 
 main {
-    padding-top: 110px; /* Ajusta según el header */
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #fff;
+    padding: 20px;
+    background-color: #dddddd;
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
@@ -76,15 +74,41 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 1225px;
+    height: 450px;
+    opacity: 0.88;
+}
+
+/* Estilo para las imágenes dentro de .img-lista4 */
+.text-overlay {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    padding: 200px 150px;
+    transform: translate(-50%, -60%);
+    color: white; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Opcional: un fondo semi-transparente para mejorar la legibilidad */
+    padding: 10px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.3rem; /* Tamaño del texto */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    text-align: center; /* Centrar el texto */
+    width: 80%; /* Ancho del contenedor de texto */
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+}
+
+.icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
-    gap: 60px 10px; /* Espacio horizontal y vertical entre iconos */
+    gap: 60px 80px; /* Espacio horizontal y vertical entre iconos */
     margin: 40px 0;
 }
 
 .icon-item:hover {
     background-color: #ff3131; /* Cambia el color de fondo al pasar el mouse */
-    scale: 1.05; /* Aumenta el tamaño al pasar el mouse */
-    transition: transform 0.5s ease; /* Transición suave */
+    padding: 20px; /* Añade un poco de espacio alrededor al pasar el mouse */
     border-radius: 10px; /* Bordes redondeados al pasar el mouse */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra al pasar el mouse */
     transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
@@ -111,7 +135,7 @@ main {
 
 .icon-item p {
     font-size: 1.2rem;
-    color: #000000;
+    color: #fff;
     text-align: center;
     margin-top: 0;
     font-family: Arial, sans-serif;
@@ -174,75 +198,19 @@ main {
 
 .slider-box { 
     position: relative;
-    width: 1200px;           /* Nuevo ancho del carrusel */
-    max-width: 100vw;
+    width: 1100px; /* o el ancho que prefieras */
+    max-width: 100%;
     margin: 50px auto 0;
     overflow: hidden;
-    box-sizing: border-box;
-    border-radius: 7px;
 }
 
-.slider-box ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    width: 3600px;          /* 1200px * 3 slides */
-    animation: slide 12s infinite alternate ease-in-out;
-    transition: margin-left 0.5s;
-}
-
-.slider-box li {
-    width: 1200px;           /* Igual al ancho de .slider-box */
-    max-width: 1200px;
-    list-style: none;
-    position: relative; /* Asegura que el texto se posicione respecto al li */
-    flex-shrink: 0;
-}
-
-.slider-box .texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    background: rgba(0,0,0,0.55);
-    padding: 18px 32px;
-    border-radius: 10px;
-    font-size: 2rem;
-    font-family: Arial, sans-serif;
-    z-index: 3;
-    max-width: 80%;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-    pointer-events: none;
-    text-align: center;
-}
-
-.slider-box img {
-    width: 100%;
-    height: 550px;           /* Nuevo alto del carrusel */
-    object-fit: cover;
-    display: block;
-}
-
-/* Animación para 3 slides */
-@keyframes slide {
-    0%   { margin-left: 0; }
-    20%  { margin-left: 0; }
-    25%  { margin-left: -1200px; }
-    45%  { margin-left: -1200px; }
-    50%  { margin-left: -2400px; }
-    70%  { margin-left: -2400px; }
-    75%  { margin-left: 0; }
-    100% { margin-left: 0; }
-}
-
-/* Efecto desvanecido a los lados del carrusel */
+/* Efecto desvanecido a los lados */
 .slider-box::before,
 .slider-box::after {
     content: "";
     position: absolute;
     top: 0;
-    width: 120px; /* ancho del desvanecido */
+    width: 60px; /* ancho del desvanecido */
     height: 100%;
     z-index: 2;
     pointer-events: none;
@@ -254,6 +222,72 @@ main {
 }
 
 .slider-box::after {
+    right: 0;
+    background: linear-gradient(to left, #dddddd 0%, transparent 100%);
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 300%; /* 100% * número de slides */
+    animation: slide 12s infinite alternate ease-in-out;
+    transition: margin-left 0.5s;
+}
+
+.slider-box li {
+    width: 1100px; /* Igual al ancho de .slider-box */
+    max-width: 100%;
+    list-style: none;
+    position: relative; /* Asegura que el texto se posicione respecto al li */
+    flex-shrink: 0;
+}
+
+.img-Carrusel,
+.slider-box img {
+    width: 100%;
+    height: 400px;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Animación para 3 slides */
+@keyframes slide {
+    0%   { margin-left: 0; }
+    20%  { margin-left: 0; }
+    25%  { margin-left: -100%; }
+    45%  { margin-left: -100%; }
+    50%  { margin-left: -200%; }
+    70%  { margin-left: -200%; }
+    75%  { margin-left: 0; }
+    100% { margin-left: 0; }
+}
+
+/* Efecto desvanecido a los lados de la imagen principal */
+.Imagen-principal {
+    position: relative;
+    display: inline-block;
+    margin-top: 0px; /* Puedes probar con 10px si quieres más separación */
+}
+
+.Imagen-principal::before,
+.Imagen-principal::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 60px; /* ancho del desvanecido */
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.Imagen-principal::before {
+    left: 0;
+    background: linear-gradient(to right, #dddddd 0%, transparent 100%);
+}
+
+.Imagen-principal::after {
     right: 0;
     background: linear-gradient(to left, #dddddd 0%, transparent 100%);
 }
@@ -304,4 +338,3 @@ main {
     opacity: 1;
     transform: translateY(0);
 }
-
