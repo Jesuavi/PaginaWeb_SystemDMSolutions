@@ -1,12 +1,12 @@
 body {
-    margin: 0;
+    margin: 110px 0 0 0; /* Deja espacio para el header */
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
 main {
     padding: 20px;
-    background-color: #dddddd;
+    background-color: #ffffff;
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
@@ -25,7 +25,7 @@ main {
 .main-col {
     flex: 1;
     display: flex;
-    align-items: center; /* <-- agrega el ; aquí */
+    align-items: center;
     justify-content: center;
     position: relative;
     min-width: 0;
@@ -51,14 +51,6 @@ main {
     z-index: 2;
 }
 
-.text-overlay {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 .main-text h2 {
     font-size: 2.2rem;
     margin-top: 0;
@@ -74,22 +66,25 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1225px;
-    height: 450px;
-    opacity: 0.88;
+    align-items: flex-start;
+    gap: 40px 60px; /* Espacio vertical y horizontal entre iconos */
+    margin: 40px 0;
+    width: 100%;      /* Ocupa todo el ancho disponible */
+    height: auto;     /* Altura automática */
 }
 
-/* Estilo para las imágenes dentro de .img-lista4 */
+ 
 .text-overlay {
     position: absolute;
-    top: 75%;
+    top: 50%;
     left: 50%;
-    padding: 200px 150px;
+    margin: 20px ;
+    padding: 200px 200px;
     transform: translate(-50%, -60%);
     color: white; /* Color del texto */
     background-color: rgba(0, 0, 0, 0.5); /* Opcional: un fondo semi-transparente para mejorar la legibilidad */
     padding: 10px; /* Espaciado alrededor del texto */
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 20px; /* Bordes redondeados */
     font-size: 1.3rem; /* Tamaño del texto */
     font-family: Arial, sans-serif; /* Fuente del texto */
     text-align: center; /* Centrar el texto */
@@ -97,18 +92,9 @@ main {
     box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
 }
 
-.icon-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 60px 80px; /* Espacio horizontal y vertical entre iconos */
-    margin: 40px 0;
-}
-
 .icon-item:hover {
     background-color: #ff3131; /* Cambia el color de fondo al pasar el mouse */
-    padding: 20px; /* Añade un poco de espacio alrededor al pasar el mouse */
+    padding: 12px; /* Añade un poco de espacio alrededor al pasar el mouse */
     border-radius: 10px; /* Bordes redondeados al pasar el mouse */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra al pasar el mouse */
     transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
@@ -135,7 +121,7 @@ main {
 
 .icon-item p {
     font-size: 1.2rem;
-    color: #fff;
+    color: #000000;
     text-align: center;
     margin-top: 0;
     font-family: Arial, sans-serif;
@@ -234,12 +220,32 @@ main {
 }
 
 .slider-box li {
-    width: 1100px; /* Igual al ancho de .slider-box */
+    width: 1100px;
     max-width: 100%;
     list-style: none;
-    position: relative; /* Asegura que el texto se posicione respecto al li */
+    position: relative; /* Necesario para posicionar el texto encima */
     flex-shrink: 0;
 }
+
+.slider-box .texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(0,0,0,0.55);
+    padding: 18px 32px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    font-family: Arial, sans-serif;
+    z-index: 3;
+    max-width: 80%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    pointer-events: none;
+    text-align: center;
+}
+
+
 
 .img-Carrusel,
 .slider-box img {
