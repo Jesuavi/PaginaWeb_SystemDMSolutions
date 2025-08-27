@@ -62,3 +62,39 @@ footer iframe {
     width: 90px;
     object-fit: contain;
 }
+
+@media (max-width: 1000px) {
+    .footer-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    .contenido-footer, .footer-mapa {
+        max-width: 95vw;
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    footer iframe {
+        width: 100%;
+        min-width: 0;
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenido-footer {
+        padding: 18px 6px;
+        font-size: 1rem;
+    }
+    .footer-logo {
+        height: 60px;
+        width: 60px;
+    }
+    footer h1 {
+        font-size: 1.2rem;
+    }
+    footer iframe {
+        height: 180px;
+    }
+}

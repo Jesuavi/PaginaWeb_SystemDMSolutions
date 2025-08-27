@@ -145,3 +145,48 @@ button[type="submit"]:hover {
     transform: translateY(0);
 }
 
+@media (max-width: 1000px) {
+    main {
+        padding: 40px 10px;
+        max-width: 98vw;
+    }
+    .contacto-info {
+        max-width: 95vw;
+        padding: 16px;
+    }
+    form {
+        max-width: 95vw;
+        padding: 30px 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 20px 2vw;
+    }
+    .contacto-info h1 {
+        font-size: 1.5rem;
+    }
+    .contacto-info p,
+    .contacto-info ul {
+        font-size: 1.1rem;
+    }
+    form {
+        padding: 16px 2vw;
+        border-radius: 14px;
+    }
+    label,
+    input,
+    textarea {
+        font-size: 1rem;
+    }
+    button[type="submit"] {
+        font-size: 1rem;
+        padding: 12px 18px;
+        border-radius: 22px;
+    }
+    textarea {
+        height: 120px;
+    }
+}
+
