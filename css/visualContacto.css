@@ -21,58 +21,56 @@ body::before {
 }
 
 main {
-    padding: 110px;
+    padding: 60px 0;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .contacto-info {
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
-    margin-top: 70px;
-    padding: 20px;
+    margin-top: 40px;
+    padding: 14px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-    border-radius: 24px;
+    border-radius: 18px;
     background-color: #f9f9f9;
 }
 .contacto-info h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 14px;
     color: #333;
 }
 
 .contacto-info p {
-    font-size: 1.6rem;
+    font-size: 1.05rem;
     color: #666;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 .contacto-info ul {
-    font-size: 1.5rem;
-    margin: 20px;
-    padding: 10px;
+    font-size: 1rem;
+    margin: 12px;
+    padding: 6px;
     color: #333;
     text-align: left;
-    
 }
 
 .contacto-text {
     text-align: justify;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 form {
-    padding: 50px 50px;
+    padding: 24px 18px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-    border-radius: 24px;
+    border-radius: 18px;
     text-align: left;
     width: 100%;
-    max-width: 600px;      /* Aumenta el ancho máximo */
+    max-width: 400px;
     background: #fff;
     margin: 0 auto;
 }
@@ -85,48 +83,48 @@ form * {
 .input-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 28px;   /* Más espacio entre campos */
+    margin-bottom: 18px;
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 14px;
     color: #333;
 }
 
 label {
     color: #000000;
-    font-size: 18px;       /* Etiquetas más grandes */
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 input, textarea {
-    padding: 18px 22px;    /* Campos más altos y anchos */
-    border-radius: 25px;
+    padding: 10px 14px;
+    border-radius: 16px;
     margin-bottom: 0;
     background-color: #faf0f0;
     border: 2px solid #f0faf1;
     color: #000000;
     outline: none;
-    font-size: 18px;       /* Texto más grande */
+    font-size: 1rem;
 }
 
 textarea {
     resize: none;
-    height: 200px;
+    height: 100px;
 }
 
 button[type="submit"] {
-    padding: 16px 40px;
-    border-radius: 30px;
+    padding: 10px 24px;
+    border-radius: 18px;
     border: none;
     background: #620505;
     color: #fff;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 18px;
+    margin-top: 12px;
     transition: background 0.2s;
 }
 
