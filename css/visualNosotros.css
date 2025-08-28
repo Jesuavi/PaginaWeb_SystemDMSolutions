@@ -51,7 +51,7 @@ main {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(117, 11, 11, 0.7); 
+    background: rgba(65, 3, 3, 0.7); 
     z-index: 0;
 }
 
@@ -118,7 +118,7 @@ main {
     width: 300px;
     min-width: 250px;
     height: 460px;
-    background: linear-gradient(rgba(22, 20, 20, 0.648), rgba(141, 116, 116, 0.85)), /* Fondo blanco semitransparente */
+    background: linear-gradient(rgba(0, 0, 0, 0.648), rgba(118, 118, 118, 0.85)), /* Fondo blanco semitransparente */
     url('/images/imgNosotros/bannerIMG.jpg') center center/cover no-repeat; /* Imagen de fondo opcional */
     border-radius: 16px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.10);

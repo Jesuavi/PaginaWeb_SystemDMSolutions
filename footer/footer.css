@@ -1,5 +1,5 @@
 footer {
-    background-color: #b20505;
+    background-color: #4d4d4d;
     color: white;
     padding-top: 60px;
     padding-bottom: 5px;
@@ -27,9 +27,10 @@ footer h1 {
     flex: 1;
     min-width: 350px;
     max-width: 600px;
-    background: rgba(0,0,0,0.12);
+    background: rgba(121, 118, 118, 0.12);
     border-radius: 18px;
     padding: 32px 36px;
+    padding-top: 5px;
     box-sizing: border-box;
     font-size: 1.20rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -44,6 +45,11 @@ footer h1 {
 .contenido-footer li {
     margin-bottom: 12px;
     line-height: 1.6;
+}
+
+.contenido-footer img {
+    height: 120px;
+    width: auto;
 }
 
 footer iframe {
